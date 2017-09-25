@@ -54,7 +54,7 @@ class Programmer extends Employee{
     public Programmer(String name,String id,double salary) {
         super(name,id,salary);
     }
-    @Override
+
     public void work() {
         System.out.println("姓名:"+this.getName()+",id:"+this.getId()+",工资是：￥"+this.getSalary()+",我的工作是敲代码！！！");
     }
@@ -76,7 +76,7 @@ class Manager extends Employee{
         this.bonus = bonus;
     }
 
-    @Override
+
     public void work() {
         System.out.println("姓名:"+this.getName()+",id:"+this.getId()+",工资是：￥"+this.getSalary()+"奖金是：￥"+this.getBonus()+",我的工作是管理！！！");
     }

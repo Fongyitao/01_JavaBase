@@ -25,7 +25,7 @@ interface Inter{
 class Outer{
     public void method() {
         new Inter() {	// 实现Inter接口
-            @Override
+
             public void print() {	// 重写抽象方法
                 System.out.println("print--");
             }

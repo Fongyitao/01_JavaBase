@@ -33,7 +33,7 @@ public class Person{
         System.out.println("Hello,My Name is:"+this.getName()+",Age:"+this.getAge());
     }
 
-    @Override
+
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
@@ -41,7 +41,7 @@ public class Person{
                 '}';
     }
 
-    @Override
+
     //重写equals方法
     public boolean equals(Object obj) {
 //        return super.equals(obj);

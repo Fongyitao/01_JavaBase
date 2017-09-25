@@ -25,7 +25,7 @@ class PersonDemo{
 
 class Student extends Person{
 
-    @Override
+
     public void show() {
         System.out.println("show");
     }
