@@ -23,6 +23,7 @@ public class 大串中小串出现次数 {
 
     }
 
+    //采用substring方式，往后查找
     private static int getCount_Demo1(String max, String min, int count) {
         int index;
         while ((index = max.indexOf(min)) != -1){
