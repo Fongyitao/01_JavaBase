@@ -11,7 +11,8 @@ public class 倒序输出字符串 {
         char[] arr = line.toCharArray();
         String s = "";
         for (int i = arr.length-1; i >= 0; i--) {
-            s += arr[i];
+//            s += arr[i];                          //拼接字符串
+            s = s.concat(String.valueOf(arr[i]));   //拼接字符串
         }
         System.out.println(s);
     }
