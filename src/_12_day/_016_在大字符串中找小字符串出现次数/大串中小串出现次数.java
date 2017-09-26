@@ -13,12 +13,23 @@ public class 大串中小串出现次数 {
         int count = 0;
         int index = 0;
 
+//        count = getCount_Demo1(max, min, count);
+
+        while (index != -1) {
+            count++;
+            index = max.indexOf(min, index + min.length()); // 每次循环，都往后叠加index
+        }
+        System.out.println("\"" + min + "\"出现次数：" + count);
+
+    }
+
+    private static int getCount_Demo1(String max, String min, int count) {
+        int index;
         while ((index = max.indexOf(min)) != -1){
             count ++;
             max = max.substring(index+min.length());
         }
-        System.out.println(count);
-
+        return count;
     }
 
 
