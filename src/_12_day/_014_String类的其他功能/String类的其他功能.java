@@ -13,5 +13,8 @@ public class String类的其他功能 {
         int compareTo(String str)
         int compareToIgnoreCase(String str)
      */
+    public static void main(String[] args) {
+        System.out.println("111");
+    }
 
 }
