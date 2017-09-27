@@ -12,6 +12,7 @@ public class StringBuffer和String相互转换 {
 
      */
     public static void main(String[] args) {
+
         StringBuffer sb = new StringBuffer("HelloWorld");   // 通过构造方法，将字符串转换成StringBuffer对象
         sb.append("你好");    //通过append方法也可以将字符串转成StringBuffer对象
         System.out.println(sb);
