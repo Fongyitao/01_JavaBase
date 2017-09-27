@@ -17,6 +17,7 @@ public class 把数组转成字符串 {
         System.out.println(s); // [1,2,3,4,5,6,7]
     }
 
+    //StringBuffer用的内存更小，效率更高
     private static String arrayToString(int[] arr) {
 
         StringBuffer sb = new StringBuffer("["); //创建缓冲区，并把 "[" 放到缓冲区
@@ -30,4 +31,5 @@ public class 把数组转成字符串 {
 
         return sb.toString();
     }
+
 }
