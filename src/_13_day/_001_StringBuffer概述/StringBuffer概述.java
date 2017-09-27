@@ -22,7 +22,18 @@ package _13_day._001_StringBuffer概述;
 public class StringBuffer概述 {
     public static void main(String[] args) {
         StringBuffer sb = new StringBuffer();
-        sb.append("Hello");
-        System.out.println(sb);
+        System.out.println(sb.length());    // 容器中的字符个数,实际值 : 0
+        System.out.println(sb.capacity());  // 容器的初始容量，理论值 : 16
+
+        System.out.println("------------");
+        StringBuffer sb2 = new StringBuffer(10);
+        System.out.println(sb2.length());       // 实际值 : 0
+        System.out.println(sb2.capacity());     // 理论值 : 10
+
+        System.out.println("------------");
+        StringBuffer sb3 = new StringBuffer("Hello");
+        System.out.println(sb3.length());   // 实际值：5    实际字符个数
+        System.out.println(sb3.capacity()); // 理论值：21   字符串的length + 初始容量
+        
     }
 }
