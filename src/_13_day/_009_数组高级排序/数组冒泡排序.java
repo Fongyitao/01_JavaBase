@@ -1,6 +1,6 @@
-package _13_day._009_数组高级冒泡排序;
+package _13_day._009_数组高级排序;
 
-public class 数组高级冒泡排序 {
+public class 数组冒泡排序 {
     /*
 需求：
     数组元素：{24, 69, 80, 57, 13}
@@ -13,11 +13,15 @@ public class 数组高级冒泡排序 {
     public static void main(String[] args) {
 
         int[] arr = {24, 69, 80, 57, 13};
-        for (int i = 0; i < arr.length -1; i++) {
-            for (int j = 0; j < arr.length -1-i; j++) {
-                int temp = 0;
+        冒泡排序(arr);  //13	24	57	69	80
+    }
+
+    //冒泡排序
+    private static void 冒泡排序(int[] arr) {
+        for (int i = 0; i < arr.length -1; i++) { // 外循环只需要比较arr.length-1次就够了
+            for (int j = 0; j < arr.length -1-i; j++) { // -1是为了防止索引越界，-i是为了提高效率
                 if (arr[j] > arr[j + 1]){
-                    temp = arr[j];
+                    int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
                 }
@@ -25,7 +29,8 @@ public class 数组高级冒泡排序 {
         }
 
         for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + ",");
+            System.out.print(arr[i] + "\t");
         }
     }
+
 }
