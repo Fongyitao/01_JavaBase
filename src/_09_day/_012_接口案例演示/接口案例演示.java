@@ -63,12 +63,14 @@ class Cat extends Animal{
         super(name,age);
     }
 
+    @Override
     public void eat() {
         System.out.println("猫吃鱼");
     }
 
+    @Override
     public void sleep() {
-        System.out.println("侧着睡");
+        System.out.println("侧着睡觉");
     }
 }
 
@@ -82,10 +84,8 @@ class JumpCat extends Cat implements Jump{
         super(name, age);
     }
 
-
+    @Override
     public void jump() {
-        System.out.println("猫跳高");
-
+        System.out.println("跳高猫");
     }
-
 }

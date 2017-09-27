@@ -28,11 +28,12 @@ abstract class Animal{	// 抽象类
 }
 
 class Cat extends Animal{
+    @Override
     public void eat() {
         System.out.println("猫吃鱼");
     }
 }
 
-abstract class _01Dog extends Animal{
+abstract class Dog extends Animal{
 
 }

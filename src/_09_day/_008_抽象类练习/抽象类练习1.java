@@ -59,12 +59,10 @@ class Cat extends Animal{
 
     }
 
-
+    @Override
     public void eat() {
         System.out.println("猫吃鱼");
-
     }
-
 }
 
 class Dog extends Animal{
@@ -73,9 +71,9 @@ class Dog extends Animal{
         super(name,age);
     }
 
+    @Override
     public void eat() {
-        System.out.println("狗吃骨头");
-
+        System.out.println("狗啃骨头");
     }
 
     public void lookHome() {

@@ -32,10 +32,8 @@ interface Inter{
 }
 
 class Dome implements Inter{
-
-
+    @Override
     public void print() {
         System.out.println("print");
     }
-
 }

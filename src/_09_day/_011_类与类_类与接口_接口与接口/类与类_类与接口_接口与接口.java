@@ -32,15 +32,15 @@ interface InterB{
 
 class Demo1 extends Object implements InterA,InterB{ // 继承一个类时候在实现多个接口
 
-
-    public void printB() {
+    @Override
+    public void printA() {
         System.out.println("printA");
     }
 
-    public void printA() {
+    @Override
+    public void printB() {
         System.out.println("printB");
     }
-
 }
 
 interface InterC extends InterA,InterB{ // 接口之间是继承关系，可以多继承
@@ -48,23 +48,18 @@ interface InterC extends InterA,InterB{ // 接口之间是继承关系，可以�
 }
 
 class Demo2 implements InterC {
-
-
+    @Override
     public void printA() {
         System.out.println("printA");
-
     }
 
-
+    @Override
     public void printB() {
         System.out.println("printB");
-
     }
 
-
+    @Override
     public void printC() {
         System.out.println("printC");
-
     }
-
 }

@@ -32,6 +32,8 @@ interface Inter{ //接口中所有成员都是public修饰
 }
 
 class Demo extends Object implements Inter{ // 一个雷不写继承类，默认继承Object类
+
+    @Override
     public void print() {
         System.out.println(num);
     }
