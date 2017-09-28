@@ -35,7 +35,5 @@ public class Integer类概述 {
         System.out.println("----------------");
         System.out.println(i1+i2);//200
 
-
-
     }
 }
