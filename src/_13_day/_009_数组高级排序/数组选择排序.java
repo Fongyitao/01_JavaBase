@@ -21,11 +21,11 @@ public class 数组选择排序 {
     //小的在前面，大的在后面
     private static void 选择排序(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = i; j < arr.length - 1; j++) {
-                if (arr[i] > arr[j+1]){
+            for (int j = i+1; j < arr.length; j++) {
+                if (arr[i] > arr[j]){
                     int temp = arr[i];
-                    arr[i] = arr[j+1];
-                    arr[j+1] = temp;
+                    arr[i] = arr[j];
+                    arr[j] = temp;
                 }
             }
         }
