@@ -21,9 +21,12 @@ public class 数组冒泡排序 {
         for (int i = 0; i < arr.length -1; i++) { // 外循环只需要比较arr.length-1次就够了
             for (int j = 0; j < arr.length -1-i; j++) { // -1是为了防止索引越界，-i是为了提高效率
                 if (arr[j] > arr[j + 1]){
+                    /*
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
+                     */
+                    swap(arr, j,j+1);
                 }
             }
         }
@@ -31,6 +34,12 @@ public class 数组冒泡排序 {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + "\t");
         }
+    }
+
+    private static void swap(int[] arr, int i,int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 
 }

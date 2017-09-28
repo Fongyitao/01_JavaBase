@@ -21,11 +21,14 @@ public class 数组选择排序 {
     //小的在前面，大的在后面
     private static void 选择排序(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = i+1; j < arr.length; j++) {
-                if (arr[i] > arr[j]){
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] > arr[j]) {
+                    /*
                     int temp = arr[i];
                     arr[i] = arr[j];
                     arr[j] = temp;
+                     */
+                    swap(arr, i, j);
                 }
             }
         }
@@ -34,6 +37,11 @@ public class 数组选择排序 {
         }
     }
 
+    private static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
 
 
 }
