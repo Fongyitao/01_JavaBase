@@ -18,7 +18,7 @@ public class 二分查找 {
     private static int getIndex(int[] arr,int value){
         int min = 0;
         int max = arr.length -1;
-        int mid = (min + max)/2;
+        int mid = (min + max) >>> 1; //右移一位，即  (min + max)/2
 
         while (arr[mid] != value){
             if (arr[mid] < value){
