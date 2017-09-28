@@ -18,7 +18,5 @@ public class 基本类型包装类 {
         boolean            Boolean
 
      */
-    public static void main(String[] args) {
 
-    }
 }
