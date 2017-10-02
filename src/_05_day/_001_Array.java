@@ -1,4 +1,4 @@
-package _05_day_数组;
+package _05_day;
 
 public class _001_Array {
     public static void main(String[] args) {

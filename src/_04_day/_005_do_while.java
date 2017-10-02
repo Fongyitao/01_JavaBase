@@ -1,4 +1,4 @@
-package _04_day循环结构;
+package _04_day;
 
 public class _005_do_while {
     public static void main(String[] args) {

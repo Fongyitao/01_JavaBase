@@ -1,4 +1,4 @@
-package _04_day循环结构;
+package _04_day;
 
 public class _003_求水仙花数 {
     public static void main(String[] args) {

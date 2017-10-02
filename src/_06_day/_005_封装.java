@@ -1,4 +1,4 @@
-package _06_day_OO;
+package _06_day;
 
 /**
  * ###06.14_面向对象(private关键字的概述和特点)(掌握)

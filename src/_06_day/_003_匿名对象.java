@@ -1,4 +1,4 @@
-package _06_day_OO;
+package _06_day;
 
 public class _003_匿名对象 {
 

@@ -1,4 +1,4 @@
-package _06_day_OO;
+package _06_day;
 
 public class _004_匿名对象的应用 {
     public static void main(String[] args) {
