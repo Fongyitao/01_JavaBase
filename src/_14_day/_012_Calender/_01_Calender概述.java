@@ -5,7 +5,9 @@ import java.util.Calendar;
 public class _01_Calender概述 {
     /*
 * A:Calendar类的概述
-    * Calendar 类是一个抽象类，它为特定瞬间与一组诸如 YEAR、MONTH、DAY_OF_MONTH、HOUR 等日历字段之间的转换提供了一些方法，并为操作日历字段（例如获得下星期的日期）提供了一些方法。
+    * Calendar 类是一个抽象类，它为特定瞬间与一组
+    * 诸如 YEAR、MONTH、DAY_OF_MONTH、HOUR 等日历字段之间的转换提供了一些方法，
+    * 并为操作日历字段（例如获得下星期的日期）提供了一些方法。
 * B:成员方法
     * public static Calendar getInstance()
     * public int get(int field)
@@ -20,11 +22,13 @@ public class _01_Calender概述 {
         System.out.println(c.get(Calendar.DAY_OF_WEEK));//2 周日是第一天，周六是第七天，今天周一所以是第二天
 
         System.out.println(c.get(Calendar.YEAR) + "年" + (c.get(Calendar.MONTH) + 1) + "月" +
-                c.get(Calendar.DAY_OF_MONTH) + "日 " + getWeek(c.get(Calendar.DAY_OF_WEEK)));//2017年10月2日 星期一
+                c.get(Calendar.DAY_OF_MONTH) + "日 "
+                + getWeek(c.get(Calendar.DAY_OF_WEEK)));//2017年10月2日 星期一
 
         //需求：显示为2017年10月02日 星期一
         System.out.println(c.get(Calendar.YEAR) + "年" + (c.get(Calendar.MONTH) + 1) + "月" +
-                getNum(c.get(Calendar.DAY_OF_MONTH)) + "日 " + getWeek(c.get(Calendar.DAY_OF_WEEK)));//2017年10月02日 星期一
+                getNum(c.get(Calendar.DAY_OF_MONTH)) + "日 "
+                + getWeek(c.get(Calendar.DAY_OF_WEEK)));//2017年10月02日 星期一
 
     }
 

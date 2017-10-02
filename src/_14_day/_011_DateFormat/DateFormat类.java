@@ -8,7 +8,8 @@ import java.util.Date;
 public class DateFormat类 {
     /*
 * A:DateFormat类的概述
-    * DateFormat 是日期/时间格式化子类的抽象类，它以与语言无关的方式格式化并解析日期或时间。是抽象类，所以使用其子类SimpleDateFormat
+    * DateFormat 是日期/时间格式化子类的抽象类，它以与语言无关的方式格式化并解析日期或时间。
+    * 是抽象类，所以使用其子类SimpleDateFormat
 * B:SimpleDateFormat构造方法
     * public SimpleDateFormat()
     * public SimpleDateFormat(String pattern)
