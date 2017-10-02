@@ -28,6 +28,7 @@ public class _03_预定义字符 {
         String regex1 = "\\W";
         System.out.println("a".matches(regex1));//false
         System.out.println("#".matches(regex1));//true
+        System.out.println("我".matches(regex1));//true
     }
 
     private static void demo3() {
