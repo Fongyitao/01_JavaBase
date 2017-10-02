@@ -6,9 +6,9 @@ public class _02_把给定字符串中数字排序 {
     //把给定字符串中数字排序
     //需求：我有如下一个字符串:”91 27 46 38 50”，请写代码实现最终输出结果是：”27 38 46 50 91”
     public static void main(String[] args) {
-        String s = "91 27 46 38 50";
+        String s1 = "91 27 46 38 50";
 
-        String[] arr = s.split(" ");
+        String[] arr = s1.split(" ");
         int[] nums = new int[arr.length];
         for (int i = 0; i < arr.length; i++) {
             nums[i] = Integer.valueOf(arr[i]);
@@ -37,5 +37,21 @@ public class _02_把给定字符串中数字排序 {
         50
         91
          */
+
+
+        // 拼接字符串
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < nums.length; i++) {
+            if (i == nums.length - 1){
+                sb.append(nums[i]);
+            }else {
+                sb.append(nums[i]).append(" ");
+            }
+        }
+
+        //打印结果
+        String s2 = sb.toString();
+        System.out.println(s2); //27 38 46 50 91
+
     }
 }
