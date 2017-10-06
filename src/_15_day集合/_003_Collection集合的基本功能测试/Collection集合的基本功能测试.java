@@ -40,12 +40,21 @@ public class Collection集合的基本功能测试 {
         c.add("c");
 
         c.remove("b");
-        System.out.println(c);//[a, c]
+        System.out.println(c);//[a, c]  删除指定元素
+
+        boolean b1 = c.contains("a");   //是否包含
+        System.out.println(b1);//true
+        boolean b2 = c.contains("b");
+        System.out.println(b2);//false
 
         c.clear();
-        System.out.println(c);//[]
+        System.out.println(c);//[]   清空元素
 
+        System.out.println(c.isEmpty());//true      判断是否为空
 
+        c.add(100);
+        c.add(true);
+        System.out.println(c.size());//2    获取元素个数
 
     }
 
