@@ -22,6 +22,21 @@ public class 栈和队列数据结构 {
         while (!list.isEmpty()) {
             System.out.print(list.removeLast() + "\t");
         }
-        //4	3	2	1	0
+        //  4	3	2	1	0
+
+        System.out.println();
+
+        Stack stack = new Stack();
+        stack.inStack("a"); //进
+        stack.inStack("b");
+        stack.inStack("c");
+        stack.inStack("d");
+        stack.inStack("e");
+
+        while (!stack.isEmpty()){   //判断是否为空
+            System.out.print(stack.outStack() + "\t");  //出
+        }
+        //  e	d	c	b	a
+
     }
 }
