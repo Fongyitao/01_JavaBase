@@ -33,6 +33,23 @@ public class Collection集合的基本功能测试 {
 
     public static void main(String[] args) {
 
+//        demo_add();
+        Collection c = new ArrayList(); //父类引用指向子类对象
+        c.add("a");
+        c.add("b");
+        c.add("c");
+
+        c.remove("b");
+        System.out.println(c);//[a, c]
+
+        c.clear();
+        System.out.println(c);//[]
+
+
+
+    }
+
+    private static void demo_add() {
         Collection c = new ArrayList(); //父类引用指向子类对象
         boolean b1 = c.add("abc");
         boolean b2 = c.add(true);   //自动装箱，new Boolean(true);
@@ -46,7 +63,5 @@ public class Collection集合的基本功能测试 {
         System.out.println(b5);//true
 
         System.out.println(c);//[abc, true, 100, Student{name='张三', age=13}, abc]
-
-
     }
 }
