@@ -14,6 +14,7 @@ public class 去除ArrayList中重复自定义对象 {
     * 重写equals()方法的
     *
     contains方法判断是否包含，底层以来的是equals方法
+    remove方法底层也是依赖equals方法
      */
     public static void main(String[] args) {
         ArrayList list = new ArrayList();
