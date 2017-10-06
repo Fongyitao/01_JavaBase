@@ -1,42 +1,33 @@
 package _16_day._01_去除ArrayList中重复元素;
 
+import _15_day集合._01_对象数组概述和使用.Student;
+
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ListIterator;
 
-public class 去除ArrayList中重复字符串 {
+public class 去除ArrayList中重复自定义对象 {
     /*
 * A:案例演示
-    * 需求：ArrayList去除集合中字符串的重复值(字符串的内容相同)
-    * 思路：创建新集合方式
-
+    * 需求：ArrayList去除集合中自定义对象元素的重复值(对象的成员变量值相同)
+* B:注意事项
+    * 重写equals()方法的
+    *
+    contains方法判断是否包含，底层以来的是equals方法
      */
     public static void main(String[] args) {
-
         ArrayList list = new ArrayList();
-        list.add("a");
-        list.add("b");
-        list.add("a");
-        list.add("c");
-        list.add("b");
-        list.add("a");
-        list.add("b");
+        list.add(new Student("张三",23));
+        list.add(new Student("李四",24));
+        list.add(new Student("王五",25));
+        list.add(new Student("李四",24));
+        list.add(new Student("赵六",26));
+        list.add(new Student("王五",25));
+        list.add(new Student("张三",23));
 
         ArrayList newList = getSingle(list);
-        System.out.println(newList);//[a, b, c]
-
+        System.out.println(newList);
     }
-
-    /*
-    创建新集合将重复元素去掉：
-    1、明确返回值类型，返回ArrayList
-    2、明确参数列表ArrayList
-
-    分析：
-    1、创建新集合B
-    2、根据传入的集合A，获取迭代器
-    3、遍历A集合
-    4、通过B集合判断地方包含A集合中的元素，不包含就添加，包含就不添加
-     */
     public static ArrayList getSingle(ArrayList list){
         ArrayList newList = new ArrayList();    //创建新集合
         Iterator it = list.iterator();  //根据传入集合（老集合）获取迭代器
