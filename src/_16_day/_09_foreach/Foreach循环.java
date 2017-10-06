@@ -1,5 +1,7 @@
 package _16_day._09_foreach;
 
+import _16_day._08_泛型之通配符.Person;
+
 import java.util.ArrayList;
 
 public class Foreach循环 {
@@ -14,7 +16,8 @@ public class Foreach循环 {
     * 数组，集合存储元素用增强for遍历
 * D:好处
     * 简化遍历
-
+    *
+foreach依赖的是迭代器
      */
     public static void main(String[] args) {
         int[] arr = {11,22,33,44,55};
@@ -35,5 +38,23 @@ public class Foreach循环 {
             System.out.print(s + "\t");
         }
         //  a	b	c	d	e
+
+        System.out.println();
+
+        ArrayList<Person> list1 = new ArrayList<>();
+        list1.add(new Person("张三",18));
+        list1.add(new Person("李四",17));
+        list1.add(new Person("王五",21));
+
+        for (Person p : list1) {
+            System.out.println(p);
+        }
+        /*
+        Person{name='张三', age=18}
+        Person{name='李四', age=17}
+        Person{name='王五', age=21}
+         */
+
+
     }
 }
