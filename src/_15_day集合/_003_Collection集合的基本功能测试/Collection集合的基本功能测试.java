@@ -1,5 +1,10 @@
 package _15_day集合._003_Collection集合的基本功能测试;
 
+import _15_day集合._001_对象数组概述和使用.Student;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
 public class Collection集合的基本功能测试 {
     /*
 * A:案例演示
@@ -19,8 +24,29 @@ public class Collection集合的基本功能测试 {
         注意:要了解详细信息,请使用 -Xlint:unchecked重新编译.
         java编译器认为该程序存在安全隐患
         温馨提示:这不是编译失败,所以先不用理会,等学了泛型你就知道了
+
+  add方法如果是list集合一直都返回true，因为list集合中可以存储重复元素的
+  如果是set集合当存储重复元素时，就会返回false
+
+  ArrayList的父类的父类重写toString方法
      */
+
     public static void main(String[] args) {
+
+        Collection c = new ArrayList(); //父类引用指向子类对象
+        boolean b1 = c.add("abc");
+        boolean b2 = c.add(true);   //自动装箱，new Boolean(true);
+        boolean b3 = c.add(100);
+        boolean b4 = c.add(new Student("张三",13));
+        System.out.println(b1);//true
+        System.out.println(b2);//true
+        System.out.println(b3);//true
+        System.out.println(b4);//true
+        boolean b5 = c.add("abc");
+        System.out.println(b5);//true
+
+        System.out.println(c);//[abc, true, 100, Student{name='张三', age=13}, abc]
+
 
     }
 }
