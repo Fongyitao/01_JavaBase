@@ -21,9 +21,12 @@ public class 集合的遍历之迭代器遍历Iterator {
         c.add(new Student("王五",25));
         c.add(new Student("赵六",26));
 
+        //获取迭代器
         Iterator it = c.iterator();
+
+        //遍历集合
         while (it.hasNext()){
-            Student s = (Student)it.next();
+            Student s = (Student)it.next(); // 向下转型
             System.out.println(s.getName() + "," + s.getAge());
         }
 
