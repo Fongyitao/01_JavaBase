@@ -3,7 +3,7 @@ package _15_day集合._08_List集合的特有功能;
 import java.util.ArrayList;
 import java.util.List;
 
-public class List集合的特有功能 {
+public class _01_List集合的特有功能 {
     /*
 * A:List集合的特有功能概述
     * void add(int index,E element)

@@ -5,7 +5,7 @@ import _15_day集合._01_对象数组概述和使用.Student;
 import java.util.ArrayList;
 import java.util.List;
 
-public class List集合存储学生对象并遍历 {
+public class _02_List集合存储学生对象并遍历 {
     /*
 * 通过size()和get()方法结合使用遍历。
      */
