@@ -15,18 +15,19 @@ public class _03_去掉集合中的重复元素 {
         list.add("a");
         list.add("c");
         System.out.println(list);//[a, a, b, a, c]
+
         HashSet<String> hs = new HashSet<>();
-        hs.clear();
 //        for (String s : list) {
 //            hs.add(s);
 //        }
-        hs.addAll(list);
-        System.out.println(hs);//[a, b, c]
+        hs.addAll(list);    //用HashSet去重
+        list.clear();   //清掉list中的元素
+        list.addAll(hs);    //将去重后的元素添加到list集合中
+        System.out.println(list);//[a, b, c]
 
-        //用LinkedHashSet实现
+        //  LinkedHashSet实现和HashSet一样
         LinkedHashSet<String> lhs = new LinkedHashSet<>();
-        lhs.clear();
         lhs.addAll(list);
-        System.out.println(lhs);//[a, b, c]
+
     }
 }

@@ -1,6 +1,6 @@
 package _17_day._01_HashSet存储字符串并遍历;
 
-public class Person {
+public class Person implements Comparable<Person>{
     private String name;
     private int age;
 
@@ -63,5 +63,17 @@ public class Person {
         int result = name != null ? name.hashCode() : 0;
         result = 31 * result + age;
         return result;
+    }
+
+    /*
+        cpmpareTo方法return 0的时候，集合中只有一个元素
+        compareTo方法返回正数的时候，集合会怎么存就怎么取
+        compareTo方法返回负数的时候，集合会倒序存储
+     */
+
+    @Override
+    public int compareTo(Person o) {
+        int num = this.age - o.age;
+        return num == 0?this.name.compareTo(o.name):num;
     }
 }
