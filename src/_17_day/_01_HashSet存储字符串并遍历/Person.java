@@ -72,6 +72,7 @@ public class Person implements Comparable<Person>{
      */
 
     @Override
+    //按照年龄排序
     public int compareTo(Person o) {
         int num = this.age - o.age;
         return num == 0?this.name.compareTo(o.name):num;
