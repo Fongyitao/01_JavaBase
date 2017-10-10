@@ -28,11 +28,22 @@ public class _03_Map集合的遍历之键值对对象找键和值 {
         Iterator<Map.Entry<String ,Integer>> it = entrySet.iterator();
         while (it.hasNext()){
             // 获取每一个Entry对象
-            Map.Entry<String,Integer> en = it.next();
+            Map.Entry<String,Integer> en = it.next();   // 父类引用指向子类对象
             String key = en.getKey();//根据键值对对象获取键
             Integer value = en.getValue();// 获取键值对对象获取值
 
             System.out.println(key + "=" + value);
+        }
+        /*
+        Alice=33
+        Ben=13
+        Jack=23
+         */
+
+        System.out.println("---------------");
+        // foreach实现
+        for (Map.Entry<String ,Integer> en :map.entrySet()){
+            System.out.println(en.getKey() + "=" + en.getValue());
         }
         /*
         Alice=33
