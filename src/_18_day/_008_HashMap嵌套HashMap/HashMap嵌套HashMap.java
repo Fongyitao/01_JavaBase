@@ -34,9 +34,9 @@ public class HashMap嵌套HashMap {
         hm.put(hm2018,"第2018级二年级");
 
         for (HashMap<Student,String> h :hm.keySet()){
-            String value = hm.get(h); // 根据键(hm2017 hm2018)，获取年级信息
+            //String value = hm.get(h); // 根据键(hm2017 hm2018)，获取年级信息
             for(Student key:h.keySet()){
-                System.out.println(value + "---" + key + "---" + h.get(key));
+                System.out.println(hm.get(h) + "---" + key + "---" + h.get(key));
             }
         }
     }
