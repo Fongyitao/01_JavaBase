@@ -1,5 +1,7 @@
 package _19_day._009_File类的概述和构造方法;
 
+import java.io.File;
+
 public class _01_File类的概述和构造方法 {
     /*
     * A:File类的概述
@@ -20,5 +22,19 @@ public class _01_File类的概述和构造方法 {
      */
     public static void main(String[] args) {
 
+        //File(String pathname)：根据一个路径得到File对象
+        File file = new File("D:\\FT\\Documents\\Hello.txt");
+        System.out.println(file.exists());//true
+
+        //File(String parent, String child):根据一个目录和一个子文件/目录得到File对象
+        File file1 = new File("D:\\FT\\Documents","Hello.txt");
+        System.out.println(file1.exists());//true
+
+        //File(File parent, String child):根据一个父File对象和一个子文件/目录得到File对象
+        File file2 = new File("D:\\FT\\Documents");
+        String child = "Hello.txt";
+        File file3 = new File(file2,child);
+        System.out.println(file3.exists());//true
+        System.out.println(file2.exists());//true
     }
 }
