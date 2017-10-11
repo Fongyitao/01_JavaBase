@@ -1,4 +1,4 @@
-package _15_day集合._08_List集合的特有功能;
+package _15_day._08_List集合的特有功能;
 
 import java.util.ArrayList;
 import java.util.List;

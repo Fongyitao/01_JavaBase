@@ -1,6 +1,6 @@
 package _16_day._04_泛型_generic_概述;
 
-import _15_day集合._01_对象数组概述和使用.Student;
+import _15_day._01_对象数组概述和使用.Student;
 
 import java.util.ArrayList;
 import java.util.Iterator;

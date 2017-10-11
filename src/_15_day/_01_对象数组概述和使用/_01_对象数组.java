@@ -1,4 +1,4 @@
-package _15_day集合._01_对象数组概述和使用;
+package _15_day._01_对象数组概述和使用;
 
 public class _01_对象数组 {
     /*

@@ -1,6 +1,6 @@
-package _15_day集合._06_集合的遍历之迭代器遍历Iterator;
+package _15_day._06_集合的遍历之迭代器遍历Iterator;
 
-import _15_day集合._01_对象数组概述和使用.Student;
+import _15_day._01_对象数组概述和使用.Student;
 
 import java.util.ArrayList;
 import java.util.Collection;

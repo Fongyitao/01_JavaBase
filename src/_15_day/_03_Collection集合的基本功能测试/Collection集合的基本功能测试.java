@@ -1,6 +1,6 @@
-package _15_day集合._03_Collection集合的基本功能测试;
+package _15_day._03_Collection集合的基本功能测试;
 
-import _15_day集合._01_对象数组概述和使用.Student;
+import _15_day._01_对象数组概述和使用.Student;
 
 import java.util.ArrayList;
 import java.util.Collection;

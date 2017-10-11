@@ -1,4 +1,4 @@
-package _15_day集合._12_数据结构之数组和链表;
+package _15_day._12_数据结构之数组和链表;
 
 public class 数据结构之数组和链表 {
     /*

@@ -1,4 +1,4 @@
-package _15_day集合._11_Vector的特有功能;
+package _15_day._11_Vector的特有功能;
 
 import java.util.Enumeration;
 import java.util.Vector;

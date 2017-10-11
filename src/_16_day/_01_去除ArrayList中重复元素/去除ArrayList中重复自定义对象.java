@@ -1,10 +1,9 @@
 package _16_day._01_去除ArrayList中重复元素;
 
-import _15_day集合._01_对象数组概述和使用.Student;
+import _15_day._01_对象数组概述和使用.Student;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.ListIterator;
 
 public class 去除ArrayList中重复自定义对象 {
     /*

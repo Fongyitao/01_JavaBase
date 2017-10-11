@@ -1,6 +1,4 @@
-package _15_day集合._01_对象数组概述和使用;
-
-import java.util.Objects;
+package _15_day._01_对象数组概述和使用;
 
 public class Student {
     private String name;

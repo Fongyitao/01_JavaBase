@@ -1,6 +1,6 @@
-package _15_day集合._04_集合的遍历之集合转数组遍历;
+package _15_day._04_集合的遍历之集合转数组遍历;
 
-import _15_day集合._01_对象数组概述和使用.Student;
+import _15_day._01_对象数组概述和使用.Student;
 
 import java.util.ArrayList;
 import java.util.Collection;

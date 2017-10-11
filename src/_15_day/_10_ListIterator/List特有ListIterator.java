@@ -1,4 +1,4 @@
-package _15_day集合._10_ListIterator;
+package _15_day._10_ListIterator;
 
 import java.util.ArrayList;
 import java.util.List;

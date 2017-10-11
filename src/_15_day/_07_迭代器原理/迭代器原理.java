@@ -1,4 +1,4 @@
-package _15_day集合._07_迭代器原理;
+package _15_day._07_迭代器原理;
 
 import java.util.ArrayList;
 import java.util.Collection;

@@ -1,6 +1,6 @@
 package _16_day._06_泛型类的概述及使用;
 
-import _15_day集合._01_对象数组概述和使用.Student;
+import _15_day._01_对象数组概述和使用.Student;
 
 public class 泛型类的概述及使用 {
     /*

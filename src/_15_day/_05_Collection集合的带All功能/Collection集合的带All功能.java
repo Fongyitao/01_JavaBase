@@ -1,4 +1,4 @@
-package _15_day集合._05_Collection集合的带All功能;
+package _15_day._05_Collection集合的带All功能;
 
 import java.util.ArrayList;
 import java.util.Collection;

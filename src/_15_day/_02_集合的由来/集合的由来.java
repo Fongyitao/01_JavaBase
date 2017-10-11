@@ -1,4 +1,4 @@
-package _15_day集合._02_集合的由来;
+package _15_day._02_集合的由来;
 
 public class 集合的由来 {
     /*
