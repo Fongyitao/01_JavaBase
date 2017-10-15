@@ -6,6 +6,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class _01_FileInputStream {
+    /*
+    * read()一次读取一个字节
+     */
     public static void main(String[] args) throws IOException {
 
 //        demo1();
