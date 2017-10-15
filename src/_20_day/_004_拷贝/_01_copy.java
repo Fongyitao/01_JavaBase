@@ -19,8 +19,6 @@ public class _01_copy {
             fos.write(b);
         }
 
-
-
         fis.close();
         fos.close();
 
