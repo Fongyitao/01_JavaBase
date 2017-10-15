@@ -18,6 +18,10 @@ public class _06_Buffer缓冲区拷贝 {
     * BufferedOutputStream也内置了一个缓冲区(数组)
     * 程序向流中写出字节时, 不会直接写到文件, 先写到缓冲区中
     * 直到缓冲区写满, BufferedOutputStream才会把缓冲区中的数据一次性写到文件里
+* E.小数组的读写和带Buffered的读取哪个更快?
+    * 定义小数组如果是8192个字节大小和Buffered比较的话
+    * 定义小数组会略胜一筹,因为读和写操作的是同一个数组
+    * 而Buffered操作的是两个数组
 
      */
     public static void main(String[] args) throws IOException {
