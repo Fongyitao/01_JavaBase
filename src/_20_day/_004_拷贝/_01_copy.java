@@ -8,7 +8,6 @@ public class _01_copy {
     /*
     * FileInputStream读取
     * FileOutputStream写出
-
      */
     public static void main(String[] args) throws IOException {
 

@@ -17,9 +17,10 @@ public class _02_拷贝音频文件画原理图 {
         FileOutputStream fos = new FileOutputStream("copy_Faded.mp3");//创建输出流对象
 
         int b;
-        while ((b = fis.read()) != -1){
+        while ((b = fis.read()) != -1){ // 不推荐，效率太低
             fos.write(b);
         }
+
 
         fis.close();
         fos.close();
