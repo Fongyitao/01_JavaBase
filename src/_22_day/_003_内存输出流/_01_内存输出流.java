@@ -4,7 +4,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class 内存输出流 {
+public class _01_内存输出流 {
     /*
 * 1.什么是内存输出流
     * 该输出流可以向内存中写数据, 把内存当作一个缓冲区, 写出之后可以一次性获取出所有数据
