@@ -15,15 +15,16 @@ public class _01_标准输入输出流概述和输出语句 {
     public static void main(String[] args) throws IOException {
 
         System.setIn(new FileInputStream("yyy.txt"));                //修改标准输入流
-        System.setOut(new PrintStream("yyy_setOut.txt"));                //修改标准输出流
+        System.setOut(new PrintStream("yyy_setOut.txt"));         //修改标准输出流
 
-        InputStream in = System.in;                                //获取标准输入流
+        InputStream in = System.in;                               //获取标准输入流
         PrintStream ps = System.out;                            //获取标准输出流
         int b;
         while((b = in.read()) != -1) {                            //从yyy.txt上读取数据
             ps.write(b);                                        //将数据写到yyy_setOut.txt上
         }
 
+        //System.out.println(); //也是一个输出流，不用关，因为没有和硬盘上的文件产生关联的管道
         in.close();
         ps.close();
 

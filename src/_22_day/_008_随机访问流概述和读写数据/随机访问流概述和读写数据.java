@@ -10,4 +10,7 @@ public class 随机访问流概述和读写数据 {
 * B:read(),write(),seek()
 
      */
+    public static void main(String[] args) {
+
+    }
 }
