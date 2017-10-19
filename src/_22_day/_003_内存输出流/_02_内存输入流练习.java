@@ -27,6 +27,7 @@ public class _02_内存输入流练习 {
 
         for (int len;(len = fis.read(arr)) != -1; ){
             baos.write(arr,0,len);
+
         }
 
         // 4、然后将内存输出流的数据全部转为字符串打印
