@@ -1,5 +1,7 @@
 package _22_day._008_随机访问流概述和读写数据;
 
+import java.io.*;
+
 public class 随机访问流概述和读写数据 {
     /*
 * A:随机访问流概述
@@ -10,7 +12,19 @@ public class 随机访问流概述和读写数据 {
 * B:read(),write(),seek()
 
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
+        RandomAccessFile raf1 = new RandomAccessFile("yyy_copy.txt","rw");
+//        raf1.write(97);
+//        System.out.println(raf1.read());
+
+        raf1.seek(10); // 设置指针位置
+        /*
+        seek好处：
+        可以多线程下载：
+
+         */
+//        raf1.write(98);
+        raf1.close();
     }
 }
