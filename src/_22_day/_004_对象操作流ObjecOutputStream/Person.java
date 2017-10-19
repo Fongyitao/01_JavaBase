@@ -3,9 +3,10 @@ package _22_day._004_对象操作流ObjecOutputStream;
 import java.io.Serializable;
 
 public class Person implements Serializable {   // 只有实现了Serializable接口的类才能被序列化
+    private static final long serialVersionUID = 1L;
     private String name;
     private int age;
-
+    private String gender;
     public Person() {
     }
 
