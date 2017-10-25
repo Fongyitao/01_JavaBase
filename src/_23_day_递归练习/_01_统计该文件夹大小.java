@@ -47,12 +47,16 @@ public class _01_统计该文件夹大小 {
      */
     public static long getFileLength(File file){
         long len = 0;
-        File[] subFiles = file.listFiles();
-        for (File subFile : subFiles) {
-            if (subFile.isFile()){
-                len += subFile.length();
-            }else {
-                len += getFileLength(subFile);
+        if (file.isFile()){
+            len = file.length();
+        }else if (file.isDirectory()){
+            File[] subFiles = file.listFiles();
+            for (File subFile : subFiles) {
+                if (subFile.isFile()){
+                    len += subFile.length();
+                }else {
+                    len += getFileLength(subFile);
+                }
             }
         }
         return len;
