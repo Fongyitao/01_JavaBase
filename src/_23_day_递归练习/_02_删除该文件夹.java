@@ -36,6 +36,7 @@ public class _02_删除该文件夹 {
     * 删除该文件
     * 1、返回值void
     * 2、参数File
+    * 注意：这里删除是不走回收站的
      */
     public static void deleteFile(File file){
 
@@ -50,8 +51,8 @@ public class _02_删除该文件夹 {
                     deleteFile(subFile);
                 }
             }
+            //循环结束后把空文件夹删掉
+            file.delete();
         }
-        //循环结束后把空文件夹删掉
-        file.delete();
     }
 }
