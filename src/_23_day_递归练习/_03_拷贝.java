@@ -15,7 +15,11 @@ public class _03_拷贝 {
     public static void main(String[] args) throws IOException {
         File src = _01_统计该文件夹大小.getFile();
         File dest = _01_统计该文件夹大小.getFile();
-        copy(src, dest);
+        if (src.equals(dest)){
+            System.out.println("Error,目标文件是源文件的子文件夹");
+        }else {
+            copy(src, dest);
+        }
     }
 
     /*
