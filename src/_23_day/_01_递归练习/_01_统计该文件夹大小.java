@@ -20,10 +20,16 @@ public class _01_统计该文件夹大小 {
     * 3、遍历数组
     * 4、判断是文件就计算大小并累加
     * 5、判断是文件夹递归调用
+    *
+    *   File dir = new File("D:\\test");
+        System.out.println(dir.length());
+        文件夹直接获取大小是0
+
      */
     public static void main(String[] args) {
         File file = getFile();
-        System.out.println(getFileLength(file)/1024/1024 + "MB");
+        System.out.println(getFileLength(file)/1024/1024/1024.0 + "GB");
+
     }
 
     public static File getFile(){
@@ -48,7 +54,7 @@ public class _01_统计该文件夹大小 {
     public static long getFileLength(File file){
         long len = 0;
         if (file.isFile()){
-            len = file.length();
+            len = file.length();    // 若输入的是文件就直接取文件length
         }else if (file.isDirectory()){
             File[] subFiles = file.listFiles();
             for (File subFile : subFiles) {
