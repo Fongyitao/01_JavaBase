@@ -28,7 +28,7 @@ public class _01_统计该文件夹大小 {
      */
     public static void main(String[] args) {
         File file = getFile();
-        System.out.println(getFileLength(file)/1024/1024/1024.0 + "GB");
+        System.out.println(getFileLength(file)/1024+ "MB");
 
     }
 
