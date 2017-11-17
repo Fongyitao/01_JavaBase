@@ -15,8 +15,8 @@ public class _03_拷贝 {
     public static void main(String[] args) throws IOException {
         File src = _01_统计该文件夹大小.getFile();
         File dest = _01_统计该文件夹大小.getFile();
-        if (src.equals(dest)){
-            System.out.println("Error,目标文件是源文件的子文件夹");
+        if (src.equals(dest)){  // 不能让目标文件夹和源文件夹同名
+            System.out.println("Error,目标文件夹是源文件的子文件夹");
         }else {
             copy(src, dest);
         }

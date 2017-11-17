@@ -39,7 +39,6 @@ public class _02_删除该文件夹 {
     * 注意：这里删除是不走回收站的
      */
     public static void deleteFile(File file){
-
         if (file.isFile()){
             file.delete();
         }else if (file.isDirectory()){
