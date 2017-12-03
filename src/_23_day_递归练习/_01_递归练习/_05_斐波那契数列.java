@@ -16,13 +16,13 @@ public class _05_斐波那契数列 {
     *          一对小兔子长成大兔子            5
      */
     public static void main(String[] args) {
-        fibonacci_sequence1();  // 21
+        fibonacci_sequence1(8);  // 21
         System.out.println(fibonacci_sequence2(8)); // 21
     }
 
     //用数组实现斐波那契数列
-    public static void fibonacci_sequence1(){
-        int[] arr = new int[8];
+    public static void fibonacci_sequence1(int n){
+        int[] arr = new int[n];
         arr[0] = 1;
         arr[1] = 1;
         for (int i = 2;i < arr.length; i++){
@@ -32,11 +32,11 @@ public class _05_斐波那契数列 {
     }
 
     //递归实现斐波那契数列
-    public static int fibonacci_sequence2(int num){
-        if (num == 1 || num == 2){
+    public static int fibonacci_sequence2(int n){
+        if (n == 1 || n == 2){
             return 1;
         }else {
-            return fibonacci_sequence2(num -2) + fibonacci_sequence2(num -1);
+            return fibonacci_sequence2(n -2) + fibonacci_sequence2(n -1);
         }
     }
 }

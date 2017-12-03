@@ -2,7 +2,7 @@ package _23_day_递归练习._01_递归练习;
 
 import java.math.BigInteger;
 
-public class _06_1000的阶乘所有零和尾部零的个数 {
+public class _06_1000的阶乘所有零的个数 {
     /*
     * 需求:求出1000的阶乘所有零和尾部零的个数,不用递归做
      */
@@ -34,7 +34,6 @@ public class _06_1000的阶乘所有零和尾部零的个数 {
             BigInteger bi2 = new BigInteger(i+"");
             bi1 = bi1.multiply(bi2); //将bi1与bi2相乘的结果赋值给bi1
         }
-
         return bi1;
     }
 }
